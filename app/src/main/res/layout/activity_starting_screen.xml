@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartingScreen">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter your name!"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="265dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Please Select Char You Want To Play"
+        android:textAlignment="center"
+        android:textColor="#DD326C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="121dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:onClick="spongebob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/spongebob" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="121dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="patrick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/patrick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
